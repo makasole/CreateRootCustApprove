@@ -208,7 +208,7 @@ public class CreateRootCustApprove {
         int rightLimit = 90; // letter 'Z'
         int targetStringLength = 5; //word length
         Random random = new Random();
-        return "AutoTest" + random.ints(leftLimit, rightLimit + 1)
+        return "Autotest" + random.ints(leftLimit, rightLimit + 1)
                 .limit(targetStringLength)
                 .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
                 .toString();
